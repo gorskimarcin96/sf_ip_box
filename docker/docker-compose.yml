@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  php:
+    container_name: sf_ip_box
+    image: sf_ip_box
+    build:
+      context: ../
+      dockerfile: docker/php/Dockerfile
+    volumes:
+      - ../:/app
